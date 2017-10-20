@@ -16,6 +16,10 @@ import {
     JhiLoginModalComponent
 } from './';
 
+import { MenuItems } from './menu-items/menu-items';
+import { AccordionAnchorDirective, AccordionLinkDirective, AccordionDirective } from './accordion';
+import { ToggleFullscreenDirective } from './fullscreen/toggle-fullscreen.directive';
+
 @NgModule({
     imports: [
         AppRealStateSharedLibsModule,
@@ -23,7 +27,11 @@ import {
     ],
     declarations: [
         JhiLoginModalComponent,
-        HasAnyAuthorityDirective
+        HasAnyAuthorityDirective,
+        AccordionAnchorDirective,
+        AccordionLinkDirective,
+        AccordionDirective,
+        ToggleFullscreenDirective
     ],
     providers: [
         LoginService,
@@ -34,14 +42,19 @@ import {
         CSRFService,
         AuthServerProvider,
         UserService,
-        DatePipe
+        DatePipe,
+        MenuItems
     ],
     entryComponents: [JhiLoginModalComponent],
     exports: [
         AppRealStateSharedCommonModule,
         JhiLoginModalComponent,
         HasAnyAuthorityDirective,
-        DatePipe
+        DatePipe,
+        AccordionAnchorDirective,
+        AccordionLinkDirective,
+        AccordionDirective,
+        ToggleFullscreenDirective
     ],
     schemas: [CUSTOM_ELEMENTS_SCHEMA]
 
