@@ -52,7 +52,7 @@ import {
         AppRealStateAdminModule,
         AppRealStateAccountModule,
         AppRealStateEntityModule,
-        //BrowserAnimationsModule,
+        BrowserAnimationsModule,
         FormsModule,
         HttpModule,
         TranslateModule.forRoot({
